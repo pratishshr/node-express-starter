@@ -3,7 +3,7 @@
  * on 8/19/16.
  */
 
-import Sequelize from 'Sequelize';
+import Sequelize from 'sequelize';
 import db from '../utils/db';
 
 let User = db.define('User', {
