@@ -1,6 +1,6 @@
 {
   "db": {
-    "database": "db_nme",
+    "database": "db_name",
     "user": "db_username",
     "password": "db_password",
     "dialect": "postgres",
