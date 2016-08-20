@@ -6,3 +6,6 @@ dist
 
 # configuration file #
 config.json
+
+# logs #
+*.log

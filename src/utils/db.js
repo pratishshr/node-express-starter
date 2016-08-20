@@ -9,7 +9,7 @@ import Sequelize from 'sequelize';
 import config from '../config/config.json';
 
 const dbConfig = config.db;
-const db = new  Sequelize(dbConfig.database, dbConfig.user, dbConfig.password, {
+const db = new Sequelize(dbConfig.database, dbConfig.user, dbConfig.password, {
   host: dbConfig.host,
   dialect: dbConfig.dialect,
   timezone: dbConfig.timezone,
