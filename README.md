@@ -4,6 +4,8 @@ Initial configuration for a node-express project.
 
 ## Steps 
 ```
+ # Rename config.json.example to config.json and add necessary configurations
+
  # Install dependencies
  npm install
  
