@@ -2,7 +2,7 @@
 
 Initial configuration for a node-express project.
 
-## Steps 
+## Setup
 ```
  # Rename config.json.example to config.json and add necessary configurations
 
@@ -22,4 +22,22 @@ Initial configuration for a node-express project.
  
  PORT=8080 npm start
  
+```
+
+## Migrations
+```shell
+# Install knex globally 
+npm install knex -g
+
+# Run migration
+cd src
+knex migrate:latest
+
+# Rollback
+knex migrate: rollback
+
+# Seeds
+knex seed:run
+
+
 ```
