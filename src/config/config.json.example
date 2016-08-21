@@ -1,15 +1,12 @@
 {
   "db": {
-    "database": "db_name",
-    "user": "db_username",
-    "password": "db_password",
-    "dialect": "postgres",
-    "host": "127.0.0.1",
-    "timezone": "+05:45",
-    "pool": {
-      "max": 5,
-      "min": 0,
-      "idle": 1000
+    "client": "postgre",
+    "connection": {
+      "host": "127.0.0.1",
+      "user": "db_username",
+      "password": "db_password",
+      "database": "node_express_starter",
+      "charset": "utf8"
     }
   }
 }

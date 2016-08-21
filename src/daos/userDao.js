@@ -6,5 +6,5 @@
 import User from '../models/User';
 
 export function fetchAll() {
-  return User.findAndCountAll();
+  return User.fetchAll();
 }
