@@ -38,6 +38,7 @@ knex migrate: rollback
 
 # Seeds
 knex seed:run
-
-
 ```
+
+ open http://localhost:4444 in the browser
+ sample resource: http://localhost:4444/users            
