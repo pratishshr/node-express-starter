@@ -12,7 +12,7 @@ let router = express.Router();
 
 router.get('/', (req, res, next) => {
   userService.fetchAll().then((response) => {
-    res.json({rows: response.toJSON()});
+    res.json({data: response.toJSON()});
   }).catch((err) => {
     next(err);
   })
