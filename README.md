@@ -3,7 +3,7 @@
 Initial configuration for a node-express project.
 
 ## Setup
-```
+```shell
  # Rename config.json.example to config.json and add necessary configurations
 
  # Install dependencies
