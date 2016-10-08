@@ -5,18 +5,14 @@
 
 import express from 'express';
 
-//controller
 import controllers from './controllers';
 
-//middleware
 import bodyParser from 'body-parser';
-
-//utils
-import * as errorHandler from './utils/errorHandler';
+import * as handler from './middlewares/errorHandler';
 
 const app = express();
 
-//configuration
+// Configuration
 app.set('port', process.env.PORT || '4444');
 app.set('view engine', 'pug');
 app.set('views', `${__dirname}/views`);
@@ -25,11 +21,11 @@ app.use(bodyParser.json());
 
 app.use(controllers);
 
-//500 Internal Server Error
-app.use(errorHandler.internalServerError);
+// Error handler
+app.use(handler.errorHandler);
 
-//404 Not Found
-app.use(errorHandler.pageNotFoundError);
+// 404 Not Found
+app.use(handler.notFoundHandler);
 
 app.listen(app.get('port'), () => {
   console.log('Server started at http://localhost:' + app.get('port'));

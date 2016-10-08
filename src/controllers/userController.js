@@ -5,17 +5,16 @@
 
 import express from 'express';
 
-//services
 import * as userService from '../services/userService';
 
 let router = express.Router();
 
 router.get('/', (req, res, next) => {
   userService.fetchAll().then((response) => {
-    res.json({data: response.toJSON()});
+    res.json(response);
   }).catch((err) => {
     next(err);
-  })
+  });
 });
 
 export default router;

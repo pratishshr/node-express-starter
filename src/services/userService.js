@@ -6,5 +6,9 @@
 import * as userDao from '../daos/userDao';
 
 export function fetchAll() {
-  return userDao.fetchAll();
+  return userDao.fetchAll().then((response) => {
+    return {
+      data: response.toJSON()
+    };
+  });
 }

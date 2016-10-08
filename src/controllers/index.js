@@ -5,7 +5,6 @@
 
 import express from 'express';
 
-//controllers
 import userController from './userController';
 
 let router = express.Router();
